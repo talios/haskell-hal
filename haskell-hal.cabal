@@ -17,9 +17,15 @@ extra-source-files:  README.adoc
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:
+  exposed-modules:   Text.Hal
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.6 && <4.7
+  ghc-options:       -Wall
+  build-depends:
+         base >=4.6 && <4.7,
+         unordered-containers,
+         aeson,
+         aeson-pretty
+
   -- hs-source-dirs:
   default-language:    Haskell2010

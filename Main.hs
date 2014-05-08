@@ -12,7 +12,6 @@ data Person = Person { firstName  :: String
                      , age        :: Int
                      } deriving (Show, Generic)
 
-instance FromJSON Person
 instance ToJSON Person
 instance Profile Person where
   profileOf p = Just "person"

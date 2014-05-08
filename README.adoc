@@ -1,0 +1,4 @@
+= Simple Haskell based HAL representation library.
+
+This is a simple Haskell library for generating `application/hal+json` representations
+for use in a larger REST based web application.
